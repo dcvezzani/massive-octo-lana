@@ -6,4 +6,4 @@ class CreateArticles < ActiveRecord::Migration
   def self.down
     raise "down migrate this manually"
   end
-
+end
