@@ -1,3 +1,10 @@
 <%= f.cms_text_field :name %>
 
-<%= f.cms_drop_down :category_id, categories_for('Bcms My401k Library/Article Product').map{|c| [c.path, c.id]} %><%= f.cms_drop_down :category_id, categories_for('Bcms My401k Library/Article Product').map{|c| [c.path, c.id]} %><%= f.cms_text_area :title %><%= f.cms_text_area :sub_title %><%= f.cms_text_editor :body %><%= f.cms_text_editor :summary %><%= f.cms_text_area :tile_title %><%= f.cms_text_area :tile_icon %>
+<%= f.cms_drop_down :section_id, categories_for('My401k Subject').map{|c| [c.path, c.id]} %>
+<%= f.cms_drop_down :layout_id, categories_for('My401k Product Layout').map{|c| [c.path, c.id]} %>
+<%= f.cms_text_area :title %>
+<%= f.cms_text_area :sub_title %>
+<%= f.cms_text_editor :body %>
+<%= f.cms_text_editor :summary %>
+<%= f.cms_text_area :tile_title %>
+<%= f.cms_text_area :tile_icon %>

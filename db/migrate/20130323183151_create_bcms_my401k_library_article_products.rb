@@ -26,6 +26,7 @@ class CreateBcmsMy401kLibraryArticleProducts < ActiveRecord::Migration
       t.text :summary, :size => (64.kilobytes + 1)
       t.text :tile_title
       t.text :tile_icon
+      t.string :type
 
       t.timestamps
     end
