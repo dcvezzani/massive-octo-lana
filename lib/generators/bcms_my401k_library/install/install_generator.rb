@@ -3,7 +3,6 @@ require 'cms/module_installation'
 class BcmsMy401kLibrary::InstallGenerator < Cms::ModuleInstallation
   add_migrations_directory_to_source_root __FILE__
   
-  
   def copy_migrations
     rake 'bcms_my401k_library:install:migrations'
   end
