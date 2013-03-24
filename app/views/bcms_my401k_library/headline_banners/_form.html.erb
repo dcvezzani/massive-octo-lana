@@ -1,0 +1,5 @@
+<%= f.cms_text_field :name %>
+
+<%= f.cms_drop_down :section_id, categories_for('My401k Subject').map{|c| [c.path, c.id]} %>
+<%= f.cms_text_editor :body %>
+<%= f.cms_text_area :banner_image %>

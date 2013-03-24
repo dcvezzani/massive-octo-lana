@@ -6,7 +6,7 @@ module BcmsMy401kLibrary
     isolate_namespace BcmsMy401kLibrary
 
     config.to_prepare do
-      %W{ArticleProduct Article BlogPost}.each do |resource|
+      %W{ArticleProduct Article BlogPost HeadlineBanner}.each do |resource|
         Cms::ViewContext.send(:include, BcmsMy401kLibrary.module_eval("#{resource.pluralize}Helper"))
         ApplicationHelper.send(:include, BcmsMy401kLibrary.module_eval("#{resource.pluralize}Helper"))
       end
